@@ -1,0 +1,19 @@
+"pwd"  en que carpeta me encuentro
+"cd /" cambiar de carpeta
+"~"  lugar de mis documentos y el / raiz del disco
+"ctrl+l" limpiar consola 
+"cd /mnt/disco-2" para cambiar de disco 
+"cd .." para volver a la carpeta anterior
+"cd"  para ir al home de donde estan nuestros archivos
+"mkdir nombreCarpeta" para crear carpetas
+"touch vacio.txt" para crear archivos
+"cat nombreDelArchivo"  para ver que hay dentro de un archivo
+.   es la carpeta actual y ..  la carpeta anterior
+"history" 
+"!26" o el numero del comando - para usar un comando ya usado
+"rm nombreDelArchivo" "rm -rf"  para eliminar un archivo
+"rm --help"  para saber mas opciones de ese comando
+git log --all --graph --decorate --oneline 
+
+
+yarn build para sacar a produccion react

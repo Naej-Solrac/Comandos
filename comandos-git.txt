@@ -1,0 +1,52 @@
+"git init" 
+"git status"
+"git add historia.txt" o "git add ." por que punto es mi carpeta actual
+"git rm --cached historia.txt"
+"git commit -m "este es el primer commit" " enviar cambios al repositorio
+ls -al para ver mis archivos
+
+
+//analizando cambios en los archivos
+"git config --list" configuracion por defecto
+"git config --list --show-origin" donde esta la config guardada
+git config global user.name "Jean Gonzales"
+git config global user.email "Jean Gonzales"
+"git log historia.txt" para saber los cambios de ese archivo
+git log -p 
+(HEAD -> master) significa que es la version mas reciente 
+"git show historia.txt" que se modifico por dentro y para comparar con el anterior
+esc + shift + zz para salirse de esa terminar cuando no pones comentarioal commit
+esc + i para empezar a escribir en VIM o insertar texto
+"git diff aca3b59630100184da57a516439c8df553813007 a7c17d26c933b441bb781ce91c0cd7f1cc235828"
+en linea 16 se puso gi diff codigo mas viejo - mas nuevo
+git diff se usa para comparar lo que hay en memoria ram con memoria del disco duro - stagin vs contenido real
+git checkout para traer cambios de otros commits 
+
+"git reset aca3b59630100184da57 --hard" permite volver a una version anterior de manera agresiva pero es la que mas se usa
+"git reset aca3b59630100184da57 --soft" permite volver a una version anterior pero se mantiene el stagin
+
+"git log --stat" cambios especificos hechos a partir del commit
+"git checkout 0426cfe45b87a6996599c8f837bf2ea2b2d0416c historia.txt para ir a ese commit pero solo verlos
+"git checkout master 0426cfe45b87a6996599c8f837bf2ea2b2d0416c historia.txt para volver a la master, por hacer la linea anterior
+git checkout master historia.txt
+"git reset HEAD" para sacar archivos del area de staging 
+
+"git commit -am" solamente funciona si ya hice git add y git commit anteriormente 
+El comando git reset --soft HEAD~1 también se utiliza para deshacer el último commit en Git, pero a diferencia de git reset --hard,-- 
+mantiene los cambios realizados en el último commit en el área de preparación (staging area)
+
+//ahora vamos a crear una rama
+"git branch cabecera" asi creo una nueva rama llamada cabecera esta empieza siendo la copia del ultimo commit 
+"git checkout cabecera" asi cambio de rama
+"git branch" para saber que ramas tengo
+"git merge cabecera" para traer la rama cabecera y pegarla a la master. no al revez.
+git rm --cached 
+creacion de llave publica y privada (SSH en local)
+git remote add origin https://github.com/Naej-Solrac/IntroJavaSE.git 
+git remote -v para verificar si me conecte al repositorio virtual 
+git branch -a "para ver mis ramas hasta remotas"
+git branch -m main "esto cambaira el nombre de mi rama master a main"
+git push origin main "para enviar los cambios al servidor
+git pull origin main para traer los cambios del servidor a local 
+git pull origin main --allow-unrelated-histories al traer los cambios no se 
+quiso fusionar asi que con eso lo forse a traer el readme 

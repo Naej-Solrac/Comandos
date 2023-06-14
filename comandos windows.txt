@@ -1,0 +1,4 @@
+winget list    los programas que tengo
+winget upgrade --all  actualizar todos los programas
+
+
